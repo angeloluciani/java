@@ -12,10 +12,7 @@ import com.jcraft.jsch.JSchException;
 import com.jcraft.jsch.Session;
 import com.jcraft.jsch.SftpException;
 
-/**
- * @author e1084351
- *
- */
+
 public class sftp {
 
 	/**
