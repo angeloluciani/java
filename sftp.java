@@ -25,9 +25,9 @@ public class sftp {
 		 JSch jsch = new JSch();
 	        Session session = null;
 	        try {
-	            session = jsch.getSession("root", "10.254.55.69", 2022);
+	            session = jsch.getSession("pippo", "ip", 2022);
 	            session.setConfig("StrictHostKeyChecking", "no");
-	            session.setPassword("docker");
+	            session.setPassword("");
 	            session.connect();
 
 	            Channel channel = session.openChannel("sftp");
