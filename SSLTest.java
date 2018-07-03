@@ -38,7 +38,7 @@ public class SSLTest {
         ctx.init(new KeyManager[0], new TrustManager[] {new DefaultTrustManager()}, new SecureRandom());
         SSLContext.setDefault(ctx);
 
-        //URL url = new URL("https://wwwuat5.ingdirect.idi.it/");
+        //URL url = new URL("inserisci qui il sito https");
         HttpsURLConnection conn = (HttpsURLConnection) obj.openConnection(proxy);
         conn.setHostnameVerifier(new HostnameVerifier() {
             @Override
